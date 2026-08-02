@@ -10,6 +10,7 @@ import SearchHistory from './pages/SearchHistory';
 import Notifications from './pages/Notifications';
 import AppInfo from './pages/AppInfo';
 import Pricing from './pages/Pricing';
+import AiProviders from './pages/AiProviders';
 
 function isAuthed() {
   return Boolean(localStorage.getItem('admin_token'));
@@ -38,6 +39,7 @@ export default function App() {
       <Route path="/notifications" element={<ProtectedShell><Notifications /></ProtectedShell>} />
       <Route path="/app-info" element={<ProtectedShell><AppInfo /></ProtectedShell>} />
       <Route path="/pricing" element={<ProtectedShell><Pricing /></ProtectedShell>} />
+      <Route path="/ai-providers" element={<ProtectedShell><AiProviders /></ProtectedShell>} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

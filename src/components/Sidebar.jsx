@@ -9,6 +9,7 @@ const links = [
   { to: '/notifications', label: 'Notifications', icon: '◔' },
   { to: '/app-info', label: 'App info', icon: '✎' },
   { to: '/pricing', label: 'Pricing', icon: '₹' },
+  { to: '/ai-providers', label: 'AI providers', icon: '⚙' },
 ];
 
 export default function Sidebar() {
